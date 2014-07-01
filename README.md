@@ -34,7 +34,7 @@ If you want to use this in your own javascript projects, you need something like
         etc
       ];
 
-      blocks.sort(function(a,b) { return (b.h < a.h); }); // sort inputs for best results
+      blocks.sort(function(a,b) { return (b.h > a.h); }); // sort inputs for best results
       packer.fit(blocks);
   
       for(var n = 0 ; n < blocks.length ; n++) {
